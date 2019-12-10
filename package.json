@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "totalvoice-node": "^1.8.0"
+  }
+}
