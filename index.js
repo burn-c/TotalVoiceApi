@@ -6,13 +6,13 @@ const totalvoice = require('totalvoice-node');
  * 
  * OBS: SÓ ENVIA MENSAGEM PARA O NUMERO CADASTRADO NA CONTA DO TOKEN 
  */
-const client = new totalvoice("2ce382408d5b1da08a6e26e3b688edfc");
+const client = new totalvoice("DIGITE SEU TOKEN AQUI!!!!"); // PRENECHER TOKEN
 
 
 /**
- * Enviad mensagem 
+ * ENVIAR MENSAGEM 
  */
-client.sms.enviar("16982653538", "Mensagem TTS", "resposta_usuario: true" )
+client.sms.enviar("DIGITE O CELULAR AQUI ", "DIGITE A MENSAGEM AQUI", "resposta_usuario: true" ) // PREENCHER NUMERO E MENSAGEM 
     .then(function (data) {
         console.log(data)
     })
@@ -22,9 +22,9 @@ client.sms.enviar("16982653538", "Mensagem TTS", "resposta_usuario: true" )
 
 
 /**
- * Verifica o status do envio
+ * VERIFICAR STATUS DO ENVIO DA MENSAGEM
  */
-    client.sms.buscar("53214599")
+    client.sms.buscar("DIGITAR O ID DO ENVIO DA MENSAGEM AQUI") // PREENCHER ID DO ENVIO DA MENSAGEM 
     .then(function (data) {
         console.log(data)
     })
